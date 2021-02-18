@@ -24,10 +24,8 @@ const partition = function (nums, left, right) {
 let count = 0;
 const quick = function (nums, left, right) {
     let index;
-    console.log(`第${count++}轮：`, nums);
     if (nums.length > 1) {
         index = partition(nums, left, right); 
-        console.log(index);
         if (left < index - 1) {
             quick(nums, left, index - 1);
         }
