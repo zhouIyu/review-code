@@ -14,3 +14,4 @@ function bindEvent (elem, type, selector, fn) {
             fn.call(target, event);
         }
     });
+}
